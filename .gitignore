@@ -3,3 +3,6 @@
 *.csv
 Cloud_Fundamentals/
 Deploy_Infraestructure_as_a_Code/
+!Udacity_Devops_Nanodegree/*.json
+!Udacity_Devops_Nanodegree/*.yml
+
