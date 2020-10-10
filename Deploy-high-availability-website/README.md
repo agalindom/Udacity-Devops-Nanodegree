@@ -4,7 +4,7 @@
 
 ## Diagram
 
-- ![img-1](Results_and_Diagram/UdagramApp.jpeg)
+- ![img-1](Results_and_Diagram/UdagramWebApp.jpeg)
 
 ## Result Website screenshot
 
