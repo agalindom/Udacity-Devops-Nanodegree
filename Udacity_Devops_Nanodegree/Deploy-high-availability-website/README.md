@@ -4,11 +4,11 @@
 
 ## Diagram
 
-- ![img-1](Infraestructure-Server-Diagram/UdagramApp.jpeg)
+- ![img-1](Infraestructure-Server-Diagram/Results_and_Diagram/UdagramApp.jpeg)
 
 ## Result Website screenshot
 
-- ![img-2](Infraestructure-Server-Diagram/Result-website-screenshot.png)
+- ![img-2](Infraestructure-Server-Diagram/Results_and_Diagram/Result-website-screenshot.png)
 
 ## Files
 
