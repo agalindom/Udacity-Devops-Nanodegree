@@ -22,5 +22,13 @@
     {
         "ParameterKey": "PublicSubnet2CIDR",
         "ParameterValue": "10.0.1.0/24"
+    },
+    {
+        "ParameterKey": "AMIImageId",
+        "ParameterValue": "ami-07efac79022b86107"
+    },
+    {
+        "ParameterKey": "InstanceType",
+        "ParameterValue": "t3.medium"
     }
 ]

@@ -30,6 +30,15 @@ Parameters:
       Description: Please enter the IP range (CIDR notation) for the private subnet in the second Availability Zone
       Type: String
       Default: 10.0.3.0/24
+  
+  AMIImageId:
+      Description: Image Id name to use in LaunchConfiguration
+      Type: String
+
+  InstanceType:
+      Description: Instance type to use in LaunchConfiguration
+      Type: String
+      Default: t3.medium
 
 Resources:
 
@@ -281,19 +290,19 @@ Resources:
       Properties:
           UserData:
               Fn::Base64: !Sub |
-                  #!/bin/bash
-                  apt-get update -y
-                  apt-get install unzip awscli -y
-                  apt-get install apache2 -y
-                  systemctl start apache2.service
-                  cd /var/www/html
-                  aws s3 cp s3://udacity-demo-1/udacity.zip .
-                  unzip -o udacity.zip
-          ImageId: ami-005bdb005fb00e791
+                    #!/bin/bash
+                    apt-get update -y
+                    apt-get install unzip awscli -y
+                    apt-get install apache2 -y
+                    systemctl start apache2.service
+                    cd /var/www/html
+                    aws s3 cp s3://udacity-demo-1/udacity.zip .
+                    unzip -o udacity.zip
+          ImageId:  !Ref AMIImageId
           IamInstanceProfile: !Ref RootInstanceProfile
           SecurityGroups:
           -   Ref: WebServerSecGroup
-          InstanceType: t3.medium
+          InstanceType: !Ref InstanceType
           BlockDeviceMappings:
           -   DeviceName: "/dev/sdk"
               Ebs:
