@@ -4,11 +4,11 @@
 
 ## Diagram
 
-![img1](/Results_and_Diagram/UdagramWebApp.jpeg)
+![img1](Results_and_Diagram/UdagramWebApp.jpeg)
 
 ## Result Website screenshot
 
-![img2](/Results_and_Diagram/Result-website-screenshot.png)
+![img2](Results_and_Diagram/Result-website-screenshot.png)
 
 ## Files
 
