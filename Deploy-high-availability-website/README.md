@@ -21,4 +21,5 @@
 ## Usage
 
 - To use the code and build the stack in AWS, log into the AWS CLI tool in your terminal and run:
+
 > sh ./create-stack.sh [name of the stack] appinfraservers.yml appinfraservers-params.json
